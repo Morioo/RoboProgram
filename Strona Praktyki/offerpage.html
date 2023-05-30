@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d33147cc2a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Nasza Oferta</title>
+</head>
+<body>
+    
+    <nav class="menu">
+        <div class="logo"><img src="logo.png" alt="LogoRoboProgram"></div>
+        <div class="container collapsible collapsible--expanded">
+            <i class="menu__icon fa-solid fa-bars"></i>
+            <ul class="menu__items collapsible_content">
+                <li><a class="menu__link" href="Home.html">Strona Główna</a></li>
+                <li><a class="menu__link" href="offerpage.html">Oferta</a></li>
+                <li><a class="menu__link" href="About.html">O nas</a></li>
+                <li><a class="menu__link" href="Kontakt.html">Kontakt</a></li>
+                <li class="menu_last_element"><a class="menu__link" href="koszyk.html"><i class="fa-solid fa-box-open"></i></a></li>
+            </ul>
+        </div>
+    
+    </nav>
+
+    <main class="mainoffer">
+<div class="offer_robo_program">
+
+<h1>Przedstawiamy ci naszą Ofertę gotowych robotów od RoboProgram!</h1><br>
+<h2>Robot kolaboracyjny "TechAssist":</h2><br>
+<p>Robot kolaboracyjny "TechAssist" to wszechstronne rozwiązanie, które zostało zaprojektowane, aby współpracować z ludźmi w różnych środowiskach pracy. Wyposażony w zaawansowane sensory, algorytmy uczenia maszynowego i zdolności rozpoznawania obrazu, "TechAssist" może wspomagać ludzi w wykonywaniu powtarzalnych i monotonnych zadań. Jest nie tylko niezwykle precyzyjny, ale także bezpieczny dla otoczenia, co czyni go idealnym partnerem dla człowieka w fabrykach, laboratoriach medycznych czy magazynach.</p>
+<br>
+<div class="roboimg1">
+    <img src="root3.png" alt="Robot z Oferty RoboProgram"><br><br>
+    <a href="koszyk.html"class="button_buy">Kup</a>
+</div>
+
+<h2>Robot serwisowy "RoboFix":</h2>
+<p>"RoboFix" to specjalistyczny robot serwisowy, który zdolny jest przeprowadzać precyzyjne naprawy i konserwację w trudno dostępnych miejscach. Dzięki swoim elastycznym ramionom i zaawansowanym narzędziom, "RoboFix" może wykonywać skomplikowane operacje na maszynach, urządzeniach elektronicznych czy instalacjach przemysłowych. Jego inteligentny system wizyjny i zdolności adaptacyjne pozwalają mu dokładnie analizować i diagnozować problemy, co przekłada się na skrócenie czasu przestoju i optymalizację efektywności procesów serwisowych.</p>
+<div class="roboimg2">
+<img src="robot2.png" alt="Robot z oferty RoboProgram"><br><br>
+<a href="koszyk.html" class="button_buy">Kup</a>
+</div>
+<h2>Robot edukacyjny "LearnBot":</h2>
+<p>"LearnBot" to innowacyjny robot edukacyjny, który został stworzony z myślą o wspomaganiu procesu nauki dzieci i młodzieży. Wyposażony w interaktywny ekran dotykowy, głosową interakcję oraz programowalne funkcje, "LearnBot" umożliwia odkrywanie podstaw programowania, robotyki i sztucznej inteligencji w ciekawy i przystępny sposób. Dzieci mogą tworzyć sekwencje instrukcji, eksperymentować z algorytmami i rozwijać logiczne myślenie, a jednocześnie bawić się i rozwijać kreatywność.
+
+    Nasze roboty są zaledwie przykładem szerokiej gamy rozwiązań, jakie oferujemy. Każdy z naszych produktów jest starannie zaprojektowany, aby spełnić konkretne potrzeby i przyczynić się do postępu w dziedzinie robotyki. Dążymy do tworzenia robotów, które nie tylko ułatwiają nasze życie, ale także inspirują do eksploracji i odkrywania nowych możliwości, jakie przyszłość przynosi w świecie robotów.
+
+    
+    </p>
+<div class="roboimg3">
+<img src="Robo1.png" alt="Robot z Oferty RoboProgram"><br><br>
+<a href="koszyk.html" class="button_buy">Kup</a>
+
+</div>
+
+</div>
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        var collapsible = document.querySelectorAll(".collapsible");
+        collapsible.forEach( (item) =>
+        {
+            item.addEventListener("click", function (){
+                this.classList.toggle("collapsible--expanded")
+                
+            })
+        });
+        </script>
+</body>
+</html>

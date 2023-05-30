@@ -1,0 +1,835 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(tło.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto Mono', monospace;
+    
+}
+/* HOMEPAGE */
+
+
+/* Menu */
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    font-weight: bold;
+    
+}
+.menu{
+    background-color:rgba(75, 75, 75, 0.9) ;
+    
+    
+}
+.menu__items{
+    list-style-type:none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    row-gap: 1.6rem;
+    
+    
+}
+.menu__link{
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.menu__icon{
+    color: white;
+    font-size: 1.6rem;
+    margin: 1.1rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    border: 3px solid white;
+    border-radius: 2px;
+    padding: 0.5rem 1.5rem;
+    transition: 0.3s linear;
+}
+.menu_last_element{
+    padding-bottom: 2rem;
+}
+
+.collapsible_content{
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s linear;
+    
+}
+
+.collapsible--expanded .collapsible_content{
+max-height: 100vh;
+
+}
+.collapsible--expanded .menu__icon{
+    box-shadow: 0 0 3px 2px white;
+    border-radius: 5px;
+}
+.logo{
+    width: 15%;
+    float: right;
+    position: relative;
+    right: 30px;
+}
+.logo img{
+    width: 70px;
+    padding: 10px;
+    border-radius: 100%;
+    position: relative;
+    
+    
+
+}
+.menu__items a:hover{
+    border-left: 3px solid rgb(94, 27, 27);
+    border-radius: 3px;
+    padding-left: 5px;
+    transition: 0.1s ease-in-out;
+}
+.menu__items a{
+    padding: 15px;
+}
+
+
+/* MainPage */
+
+.main{
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    
+}
+
+.About_Our_Plans{
+    width: 50%;
+    height: auto;
+    float: left;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    position: relative;
+    top: 7%;
+    padding: 0 5%;
+}
+.why_us{
+    width: 50%;
+    float: right;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 7%;
+    padding: 0 5%;
+}
+
+.incentive{
+    width: 80%;
+    height: auto;
+    position: relative;
+    top: 5%;
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+    text-align: center;
+    font-size: 8px;
+}
+
+.About_Our_Plans img{
+    width: 40%;
+    margin: 5%;
+    border-radius: 10px;
+}
+
+
+
+
+/* OFFERPAGE */
+
+/* main */
+.mainoffer{
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.offer_robo_program{
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 5%;
+    font-size: 20px;
+
+
+
+}
+
+.roboimg1{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 80px;
+}
+.roboimg1 img{
+width: 100%;
+border-radius: 20px;
+}
+.button_buy{
+    padding: 0 35px;
+    background-color: orange;
+    border: none;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Cherry Bomb One', cursive;
+    color: black;
+    border-radius: 100px;
+    
+}
+.button_buy:hover{
+    font-size: 30px;
+    padding: 5px 45px;
+    transition: 0.2s linear;
+}
+.roboimg2{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 80px;
+}
+.roboimg2 img{
+    width: 100%;
+    border-radius: 20px;
+}
+.roboimg3{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 80px;  
+}
+.roboimg3 img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+
+
+
+/* shopping cart */
+
+.main_shopping_cart{
+    width: 100%;
+    height: 1500px;
+    background-image: url(Tło\ na\ koszyk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.mainbar{
+    width: 95%;
+    height: 1000px;
+    background-color:rgba(40, 39, 39, 0.85);
+    margin: 0 auto;
+    position: relative;
+    top: 150px;
+    border-radius: 100px;
+}
+.containerform{
+    width: 100%;
+    max-width: 650px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px white;
+    position: relative;
+    margin: auto auto;
+    top: 12%;
+}
+
+
+.form-title{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px white;
+}
+
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.user-input-box:nth-child(2n){
+    justify-content: end;
+}
+
+.user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.user-input-box label{
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.user-input-box input{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+
+.data-title{
+    color:white;
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+}
+
+.personal-data{
+    margin: 15px 0;
+    color: white;
+}
+
+.personal-data label{
+    padding: 0 20px 0 5px;
+}
+
+.personal-data label,
+.personal-data input,
+.form-submit-btn input{
+    cursor: pointer;
+}
+
+.form-submit-btn{
+    margin-top: 40px;
+}
+
+.form-submit-btn input{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border:none;
+    border-radius: 3px;
+    color: rgb(209, 209, 209);
+    background: rgba(63, 114, 76, 0.7);
+}
+
+.form-submit-btn input:hover{
+    background: rgba(56, 204, 93, 0.7);
+    color: rgb(255, 255, 255);
+}
+.info{
+    width: 50%;
+    height: auto;
+    text-align: center;
+    position: relative;
+    top: 10%;
+    margin: 0 auto;
+    color: white;
+}
+.link_thanks{
+    text-decoration: none;
+}
+
+
+/* ThanksPage */
+.main_thanks_page{
+    width: 100%;
+    height: 1000px;
+    background-image: url(dziękuje\ tło.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.thanks{
+    width: 95%;
+    height: auto;
+    background-color: rgba(28, 28, 26, 0.8);
+    border-radius: 100px;
+    margin: auto auto;
+    position: relative;
+    top: 25%;
+    text-align: center;
+    color: rgba(250, 250, 250, 0.9);
+    border: 4px solid rgb(244, 82, 82);
+    padding: 2%;
+}
+.thanks h1{
+padding: 30px;
+}
+.thanks_text{
+    width: 70%;
+    margin: 0 auto;
+    font-size: 20px;
+    
+    
+}
+.button_home_page{
+    font-size: 50px;
+    padding: 20px;
+    
+}
+
+
+
+/* About page */
+
+.main_about_page{
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding-top: 3%;
+    text-align: center;
+    font-size: 100%;
+    padding-bottom: 10%;
+    
+}
+.headquarters{
+padding-bottom: 10%;
+
+}
+.headquarters img{
+    width: 50%;
+    border-radius: 20px;
+}
+.text_about{
+    width: 80%;
+    margin: 0 auto;
+
+
+}
+.google_maps{
+    width: 90%;
+    height: 70%;
+    margin: 0 auto;
+}
+.google_maps iframe{
+    width: 100%;
+}
+.employees{
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 100%;
+
+}
+.employees_1{
+    width: 25%;
+    
+    
+}
+.employees_1 img{
+    width: 100%;
+    border-radius: 10px;
+}
+.employees_2{
+    width: 25%;
+    
+    
+    
+}
+.employees_2 img{
+    width: 100%;
+    border-radius: 10px;
+}
+.employees_3{
+    width: 25%;
+
+}
+.employees_3 img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/*contact_Page*/
+
+
+.main_contact_page{
+    width: 100%;
+    height: 1000px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color:white;
+}
+
+
+.form_contact{
+  background: rgba(27,31,34,0.80);
+  width: 640px;
+  margin: 50px auto;
+  max-width: 97%;
+  border-radius: 4px;
+  padding: 55px 30px;
+  color: white;
+}
+
+.form_contact .title h2{
+  letter-spacing: 6px;
+  border-bottom: 1px solid white;
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-bottom: 32px;
+}
+
+form .half{
+  display: flex;
+  justify-content: space-between;
+}
+
+form .half .item{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  width: 48%;
+}
+
+form label{
+  display: block;
+  font-size: 13px;
+  letter-spacing: 3.5px;
+  margin-bottom: 16px;
+}
+
+form .half .item input{
+  border-radius: 4px;
+  border: 1px solid white;
+  outline: 0;
+  padding: 16px;
+  width: 100%;
+  height: 44px;
+  background: transparent;
+  font-size: 17px;
+}
+
+form .full{
+  margin-bottom: 24px;
+}
+
+form .full textarea{
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid white;
+  outline: 0;
+  padding: 12px 16px;
+  width: 100%;
+  height: 200px;
+  font-size: 17px;
+}
+
+form .action{
+  margin-bottom: 32px;
+}
+
+form .action input{
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  height: 44px;
+  letter-spacing: 3px;
+  outline: 0;
+  padding: 0 20px 0 22px;
+  margin-right: 10px;
+}
+
+form .action input[type="submit"]{
+  background: white;
+  color: rgb(0, 0, 0);
+}
+
+form .icons a{
+  border: 1px solid white;
+  border-radius: 50%;
+  line-height: 36px;
+  text-align: center;
+  font-weight: 600;
+  width: 38px;
+  margin-right: 10px;
+}
+
+form .half .item input:focus, form .full textarea:focus, form .action input[type="reset"]:hover, form .icons a:hover{
+  background: rgba(255, 255, 255, 0.5);
+}
+
+
+
+/* Thanks_page_Contact */
+
+.main_thanks_contact{
+    width: 100%;
+    height: 1000px;
+    background-image: url(tło_thanks.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text_thanks_contact{
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 25%;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.5);
+    
+
+}
+.text_thanks_contact h1{
+    border-bottom: 3px solid yellow;
+    padding: 8px;
+}
+.go_to_home a{
+    font-size: 20px;
+    color: yellow;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    left: 50px;
+}
+
+
+
+
+
+/*Meida for dziękujemy.html*/
+@media screen and (max-width: 1000px) {
+    .main_thanks_contact{
+        height: auto;
+    }
+    .text_thanks_contact{
+        font-size: 100%;
+        height: 1200px;
+        
+    }
+}
+
+
+@media (max-width: 480px){
+  form .half{
+    flex-direction: column;
+  }
+  form .half .item{
+    width: 100%;
+  }
+  form .action{
+    display: flex;
+    flex-direction: column;
+  }
+  form .action input{
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
+
+
+
+
+/*Media for employees*/
+
+@media screen and (max-width: 1000px) {
+    .employees{
+        font-size: 60%;
+    }
+    
+}
+
+
+/*Media for Thanks_Page*/
+
+@media screen and (max-width: 1000px) {
+    body{
+        background-image: none;
+    }
+    .main_thanks_page{
+        height: auto;
+        padding: 50px 0;
+    }
+    .thanks{
+        
+    }
+}
+
+/* Media for form */
+
+@media(max-width: 600px){
+    .containerform{
+        min-width: 280px;
+    }
+
+    .user-input-box{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .user-input-box:nth-child(2n){
+        justify-content: space-between;
+    }
+
+    .personal-data{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .main-user-info{
+        max-height: 380px;
+        overflow: auto;
+    }
+
+    .main-user-info::-webkit-scrollbar{
+        width: 0;
+    }
+}
+
+
+
+/* Media for menu */
+
+@media  screen and (min-width: 1000px) {
+    .menu__items{
+        flex-direction: row;
+        justify-content: flex-end;
+        column-gap: 1.5rem;
+        padding: 2rem 0;
+        margin-right: 3rem;
+        
+    }
+    .menu_last_element{
+        padding-bottom: 0;
+    }
+    .menu__icon{
+        display: none;
+    }
+    .logo{
+        width: 20%;
+        height: auto;
+        float: left;
+        left:2%;
+    }
+    .logo img{
+        width: 90px;
+    }
+}
+
+/* Media for Main */
+
+@media screen and (max-width: 1000px) {
+    body{
+        background-image: url(tło.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    .main{
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        background-color: rgba(33, 33, 33, 0.7);
+    }
+    
+    .About_Our_Plans{
+    width: 100%;
+    position: relative;
+    top: 2%;
+    padding: 3%;
+    }
+   
+}
+
+/* Media for Main on tablet */
+@media  screen and (min-width: 450px) {
+    .main{
+        width: 100%;
+        height: 2100px;
+    }
+    .About_Our_Plans{
+        width: 100%;
+        position: relative;
+        top: 2%;
+        padding: 3%;
+        }
+        
+        }
+
+        /* Media on offerpage */
+
+        
+@media  screen and (max-width:1000px) {
+    .mainoffer{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .offer_robo_program{
+        font-size: 90%;
+        position: relative;
+        top: 2%;
+        text-align: center;
+    }
+    .roboimg1{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 10px;
+        
+
+    }
+    .roboimg1 img{
+        width: 100%;
+        border-radius: 20px;
+    }
+            
+    .roboimg2{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 10px;
+    }
+    .roboimg2 img{
+        width: 100%;
+        border-radius: 20px;
+    }
+    .roboimg3{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 10px;
+    }
+    .roboimg3{
+        width: 100%;
+        border-radius: 20px;
+    }
+            
+        }

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d33147cc2a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Kontakt do nas</title>
+</head>
+<body>
+    <nav class="menu">
+        <div class="logo"><img src="logo.png" alt="LogoRoboProgram"></div>
+        <div class="container collapsible collapsible--expanded">
+            <i class="menu__icon fa-solid fa-bars"></i>
+            <ul class="menu__items collapsible_content">
+                <li><a class="menu__link" href="Home.html">Strona Główna</a></li>
+                <li><a class="menu__link" href="offerpage.html">Oferta</a></li>
+                <li><a class="menu__link" href="About.html">O nas</a></li>
+                <li><a class="menu__link" href="Kontakt.html">Kontakt</a></li>
+                <li class="menu_last_element"><a class="menu__link" href="koszyk.html"><i class="fa-solid fa-box-open"></i></a></li>
+                
+            </ul>
+        </div>
+    
+    </nav>
+
+    <main claas="main_contact_page">
+        <form class="form_contact" action="https://formsubmit.io/send/mariusz13579pl@gmail.com" method="POST">
+            <div class="title">
+              <h2>Kontakt</h2>
+            </div>
+            <div class="half">
+              <div class="item">
+                <label for="name">Imie:</label>
+                <input type="text" id = "name">
+              </div>
+              <div class="item">
+                <label for="email">Email:</label>
+                <input type="text" id = "email">
+              </div>
+            </div>
+            <div class="full">
+              <label for="message">Wiadomość</label>
+              <textarea name="" id = "message"></textarea>
+            </div>
+            <div class="action">
+              <input type="submit" value = "Wyślij">
+              <input type="reset" value = "Wyczyść">
+            </div>
+            <input name="_redirect" type="hidden" id="name" value="">
+            <div class="icons">
+              <a href="https://twitter.com/?lang=pl" class = "fa fa-twitter"></a>
+              <a href="https://www.facebook.com/" class = "fa fa-facebook"></a>
+              <a href="https://www.instagram.com/" class = "fa fa-instagram"></a>
+              <a href="https://github.com/" class = "fa fa-github"></a>
+            </div>
+          </form>
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        var collapsible = document.querySelectorAll(".collapsible");
+        collapsible.forEach( (item) =>
+        {
+            item.addEventListener("click", function (){
+                this.classList.toggle("collapsible--expanded")
+                
+            })
+        });
+        </script>
+
+
+</body>
+</html>

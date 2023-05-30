@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d33147cc2a.js" crossorigin="anonymous"></script>
+    <title>Shopping basket</title>
+</head>
+<body>
+  <nav class="menu">
+    <div class="logo"><img src="logo.png" alt="LogoRoboProgram"></div>
+    <div class="container collapsible collapsible--expanded">
+        <i class="menu__icon fa-solid fa-bars"></i>
+        <ul class="menu__items collapsible_content">
+            <li><a class="menu__link" href="Home.html">Strona Główna</a></li>
+            <li><a class="menu__link" href="offerpage.html">Oferta</a></li>
+            <li><a class="menu__link" href="About.html">O nas</a></li>
+            <li><a class="menu__link" href="Kontakt.html">Kontakt</a></li>
+            <li class="menu_last_element"><a class="menu__link" href="koszyk.html"><i class="fa-solid fa-box-open"></i></a></li>
+            
+        </ul>
+    </div>
+
+</nav>
+
+    <main class="main_shopping_cart">
+
+        <div class="mainbar">
+          <div class="info">
+<h2>W formularzu podaj nieprawdziwe dane to jest formularz testowy!!!</h2>
+</div>
+        <div class="containerform">
+            <h1 class="form-title">Kup</h1>
+            <form action="ThanksPage.html">
+              <div class="main-user-info">
+                <div class="user-input-box">
+                  <label for="fullName">Imie i Nazwisko</label>
+                  <input type="text"
+                          id="fullName"
+                          name="fullName"
+                          placeholder="Imie i Nazwisko"/>
+                </div>
+                <div class="user-input-box">
+                  <label for="username">Nick</label>
+                  <input type="text"
+                          id="username"
+                          name="username"
+                          placeholder="Wpisz nick"/>
+                </div>
+                <div class="user-input-box">
+                  <label for="email">Email</label>
+                  <input type="email"
+                          id="email"
+                          name="email"
+                          placeholder="Wpisz swój email"/>
+                </div>
+                <div class="user-input-box">
+                  <label for="phoneNumber">Numer telefonu</label>
+                  <input type="text"
+                          id="phoneNumber"
+                          name="phoneNumber"
+                          placeholder="Wpisz numer telefonu"/>
+                </div>
+                <div class="user-input-box">
+                  <label for="City">Miasto i kod pocztowy</label>
+                  <input type="text"
+                          id="City"
+                          name="City"
+                          placeholder="Wpisz Adres"/>
+                </div>
+                <div class="user-input-box">
+                  <label for="street">Ulica i numer domu</label>
+                  <input type="text"
+                          id="street"
+                          name="street"
+                          placeholder="Podaj nazwę ulicy i numer domu"/>
+                </div>
+              </div>
+              
+              <div class="personal data-box">
+                <span class="data-title">Czy zgadzasz się na przetwarzanie twoich danych osobowych?(podaj nieprawdziwe dane to jest formularz testowy)</span>
+                <div class="personal-data">
+                  <input type="radio" name="data" id="personal data">
+                  <label for="data">Tak</label>
+                </div>
+              </div>
+              
+             <div class="form-submit-btn">
+               <input type="submit" value="Zapłać">
+             
+              </div>
+</a>
+              
+          
+            </form>
+          </div>
+
+</div>
+
+    </main>
+
+
+
+
+    <script>
+
+var collapsible = document.querySelectorAll(".collapsible");
+collapsible.forEach( (item) =>
+{
+    item.addEventListener("click", function (){
+        this.classList.toggle("collapsible--expanded")
+        
+    })
+});
+</script>
+</body>
+</html>
